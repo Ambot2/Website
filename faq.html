@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Rk - FAQ</title>
+<link rel="stylesheet" href="StyleF.css">
+</head>
+<body>
+
+<div class="container">
+    <h1>Frequently Asked Questions</h1>
+    <div class="faq-item">
+        <h3>What are common cyber threats and attacks?</h3>
+        <div class="faq-answer">
+            <p>Common cyber threats and attacks include phishing, where attackers trick individuals into revealing sensitive information, and malware, such as viruses and ransomware, which can infect systems and steal or encrypt data. These threats exploit vulnerabilities in software, networks, and human behavior to compromise the confidentiality, integrity, and availability of information and systems.</p>
+        </div>
+    </div>
+    <div class="faq-item">
+        <h3>How are technologies like artificial intelligence, blockchain, and IoT impacting IT?</h3>
+        <div class="faq-answer">
+            <p>Technologies like artificial intelligence (AI), blockchain, and the Internet of Things (IoT) are revolutionizing IT by enhancing automation, security, and efficiency. AI enables predictive analytics and automation of tasks, blockchain ensures secure and transparent transactions, and IoT connects devices for data collection and analysis, transforming how businesses operate and interact with technology.</p>
+        </div>
+    </div>
+    <div class="faq-item">
+        <h3>How do you plan, execute, and monitor IT projects?</h3>
+        <div class="faq-answer">
+            <p>
+                Planning IT projects involves defining goals, creating a detailed roadmap, and assigning responsibilities, while execution requires effective communication, task management, and adaptation to changing circumstances. Monitoring involves tracking progress, identifying and addressing issues promptly, and ensuring that the project stays on course to achieve its objectives.</p>
+        </div>
+    </div>
+</div>
+<div class="back-button">
+    <a href="index.html">Back to Home</a>
+</div>
+</div>
+</div>
+
+<script>
+    const faqItems = document.querySelectorAll('.faq-item');
+
+    faqItems.forEach(item => {
+        item.addEventListener('click', () => {
+            item.classList.toggle('active');
+        });
+    });
+</script>
+
+</body>
+</html>

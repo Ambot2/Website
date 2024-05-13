@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Rk - Testimonials</title>
+<link rel="stylesheet" href="StyleT.css">
+</head>
+<body>
+<header>
+<h1>Testimonials</h1>
+<nav>
+    <ul>
+      <li><a href="portfolio.html" target="_self">Portfolio</a></li>
+      <li><a href="Blog.html" target="_self">Blog</a></li>
+      <li><a href="Resume.html" target="_self">Resume</a></li>
+      <li><a href="service.html" target="_self">Services</a></li>
+      <li><a href="Testimonials.html" target="_self">Testimonials</a></li>
+      <li><a href="FAQ.html" target="_self">FAQ</a></li>
+      <li><a href="error.html" target="_self">Error</a></li>
+    </ul>
+</nav>
+</header>
+
+<div class="testimonial">
+    <div class="testimonial-text" class="container">
+        <img src="Babe.jpg" alt="Image">
+        <p>goods rana babe.</p>
+        <p class="name">LODICAKES</p>
+    </div>
+</div>
+<div class="testimonial">
+     <div class="testimonial-text" class="container">
+         <img src="Nana.jpg" alt="Image">
+         <p>Ok raman.</p>
+         <p class="name">Boss Nana</p>
+     </div>
+</div>      
+</div>
+  <button class="prev" onclick="moveSlide(-1)">❮</button>
+  <button class="next" onclick="moveSlide(1)">❯</button>
+  
+<footer>
+    <script>
+        let slideIndex = 0;
+
+function showSlide(n) {
+  const slides = document.getElementsByClassName("testimonial");
+  if (n >= slides.length) { slideIndex = 0; }
+  if (n < 0) { slideIndex = slides.length - 1; }
+  for (let i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  slides[slideIndex].style.display = "block";
+}
+
+function moveSlide(n) {
+  showSlide(slideIndex += n);
+}
+
+showSlide(slideIndex);
+
+    </script>
+<p> @2024 Rk Arendain. All rights reserved.</p>
+</footer>
+</body>
+</html>
